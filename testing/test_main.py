@@ -26,4 +26,5 @@ class UnitTests(unittest.TestCase) :
            for j in range(2,10) :
                inputs.append((i,j))
                myvar1 = randomvar( 0.5, variance=1/12/j, vmin=0, vmax=1, isinteger=False )
+               var.append(myvar1)
        assert( check_func("sample", inputs, var, calls=["sample_mean"]) ) 
