@@ -22,8 +22,8 @@ class UnitTests(unittest.TestCase) :
 
    def test_sample(self) : 
        inputs, var = [], [] 
-       for i in range(10,20) :
-           for j in range(2,10) :
+       for i in range(15,20) :
+           for j in range(5,10) :
                inputs.append((i,j))
                myvar1 = randomvar( 0.5, variance=1/12/j, vmin=0, vmax=1, isinteger=False )
                var.append(myvar1)
